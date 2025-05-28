@@ -25,6 +25,7 @@ describe('Teste para o componente PostComment', () => {
         })
         fireEvent.click(screen.getByTestId('comment-button'))
 
+        expect(screen.getByText('Test-1')).toBeInTheDocument()
         expect(screen.getByText('Test-2')).toBeInTheDocument()
     })
 });
